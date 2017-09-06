@@ -1,0 +1,92 @@
+# Copyright (c) 2003-2017 Broad Institute, Inc., Massachusetts Institute of Technology, and Regents of the University of California.  All rights reserved.
+#GSEACollapseDataset
+#Thu Sep 20 08:05:42 EDT 2012
+JVMLevel=1.8
+LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00357\:999999999.99
+author=Aravind Subramanian, Broad Institute
+commandLine=<run-with-env> -u "java/1.8" java <java_flags> -Djava.util.prefs.PreferencesFactory\=com.allaboutbalance.articles.disableprefs.DisabledPreferencesFactory -Djava.awt.headless\=true -cp <libdir>commons-lang3-3.4.jar<path.separator><libdir>commons-io-2.4.jar<path.separator><libdir>commons-cli-1.2.jar<path.separator><libdir>gp-gsea.jar<path.separator><libdir>disable-prefs.jar<path.separator><libdir>gsea-3.0.jar org.genepattern.modules.gsea.CollapseDatasetWrapper -res <expression.dataset> -chip <chip.platform.file> -mode <collapsing.mode> -dev_mode <dev.mode> -include_only_symbols <omit.features.with.no.symbol.match>
+cpuType=any
+taskDoc=doc.html
+description=Collapse Dataset as implemented by Gene Set Enrichment Analysis
+fileFormat=
+language=Java
+name=GSEACollapseDataset
+os=any
+
+p1_MODE=IN
+p1_TYPE=FILE
+p1_default_value=
+p1_description=Dataset file - .res, .gct
+p1_fileFormat=gct;res
+p1_flag=
+p1_name=expression.dataset
+p1_optional=
+p1_prefix=
+p1_prefix_when_specified=
+p1_type=java.io.File
+p1_value=
+
+p2_MODE=IN
+p2_TYPE=FILE
+p2_choiceDir=ftp\://ftp.broadinstitute.org/pub/gsea/annotations/
+p2_choiceDirFilter=*.chip
+p2_default_value=
+p2_description=DNA Chip (array) annotation file from GSEA website.  Upload your own chip file if the one corresponding to your DNA Microarray platform is not listed in the drop-down menu.  A chip file is only required if collapse dataset is set to true.
+p2_fileFormat=chip
+p2_flag=
+p2_name=chip.platform.file
+p2_optional=on
+p2_prefix=
+p2_prefix_when_specified=
+p2_type=java.io.File
+p2_value=
+
+p3_MODE=
+p3_TYPE=TEXT
+p3_default_value=Max_probe
+p3_description=Collapsing mode
+p3_fileFormat=
+p3_flag=
+p3_name=collapsing.mode
+p3_optional=
+p3_prefix=
+p3_prefix_when_specified=
+p3_type=java.lang.String
+p3_value=Max_probe;Median_of_probes
+
+p4_MODE=
+p4_TYPE=TEXT
+p4_default_value=true
+p4_description=If there is no known gene symbol match for a probe set, omit it from the collapsed dataset
+p4_fileFormat=
+p4_flag=
+p4_name=omit.features.with.no.symbol.match
+p4_optional=
+p4_prefix=
+p4_prefix_when_specified=
+p4_type=java.lang.String
+p4_value=false;true
+
+p5_MODE=
+p5_TYPE=TEXT
+p5_default_value=false
+p5_description=Enable developer mode.
+p5_fileFormat=
+p5_flag=
+p5_name=dev.mode
+p5_optional=
+p5_prefix=
+p5_prefix_when_specified=
+p5_type=java.lang.String
+p5_value=false;true
+
+pipelineModel=
+privacy=public
+quality=development
+requiredPatchLSIDs=
+requiredPatchURLs=
+serializedModel=
+taskType=Preprocess & Utilities
+category=beta
+userid=eby@broadinstitute.org
+version=Development revision with GSEA v3.0 code.
