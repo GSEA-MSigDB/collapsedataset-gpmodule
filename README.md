@@ -4,7 +4,7 @@
 
 The GSEA CollapseDataset module for GenePattern is a tool from the [GSEA Desktop](https://github.com/GSEA-MSigDB/gsea-desktop) used to collapse a dataset from probe IDs (e.g. from Affymetrix microarrays) to gene symbols.  It has been wrapped in a form suitable for [GenePattern](http://www.genepattern.org/), allowing it to be run on the GenePattern servers in a batch setting using a web UI, with no client installation. 
 
-This module has never had a Production release.  It is part of the GSEA test suite and was designed exclusively with that in mind.  While it has been tested extensively for that use it has never been evaluated for any other purpose.  [Documentation](docs/v1/index.html) is minimal.
+This module has never had a Production release.  It is part of the GSEA test suite and was designed exclusively with that in mind.  While it has been tested extensively for that use it has never been evaluated for any other purpose.
 
 # License
 
