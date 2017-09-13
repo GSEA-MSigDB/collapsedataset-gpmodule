@@ -8,7 +8,7 @@ This module has never had a Production release.  It is part of the GSEA test sui
 
 # License
 
-GSEA Desktop and the GSEA CollapseDataset module for GenePattern are made available under the terms of a BSD-style license, a copy of which is included in the distribution in the [LICENSE.txt](LICENSE.txt) file.  See that file for exact terms and conditions.
+The GSEA CollapseDataset module for GenePattern is made available under the terms of a BSD-style license, a copy of which is included in the distribution in the [LICENSE.txt](LICENSE.txt) file.  See that file for exact terms and conditions.
 
 #  Latest Version
 
