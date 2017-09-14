@@ -35,5 +35,5 @@ If, by operation of law or otherwise, any of the aforementioned warranty disclai
 inapplicable, your sole remedy, regardless of the form of action, including, but not limited to, negligence 
 and strict liability, shall be replacement of the software with an updated version if one exists.
 
-Development of the GSEA Collapse Dataset module for GenePattern was funded, in whole or in part, by the National Institutes of Health.
+Development of the GSEA CollapseDataset module for GenePattern was funded, in whole or in part, by the National Institutes of Health.
 
