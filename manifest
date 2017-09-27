@@ -1,8 +1,7 @@
 # Copyright (c) 2003-2017 Broad Institute, Inc., Massachusetts Institute of Technology, and Regents of the University of California.  All rights reserved.
 #GSEACollapseDataset
-#Thu Sep 20 08:05:42 EDT 2012
 JVMLevel=1.8
-LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00357\:999999999.99
+LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00357\:999999999
 author=Aravind Subramanian, Broad Institute
 commandLine=<run-with-env> -u "java/1.8" java <java_flags> -Djava.util.prefs.PreferencesFactory\=com.allaboutbalance.articles.disableprefs.DisabledPreferencesFactory -Djava.awt.headless\=true -cp <libdir>commons-lang3-3.4.jar<path.separator><libdir>commons-io-2.4.jar<path.separator><libdir>commons-cli-1.2.jar<path.separator><libdir>gp-gsea.jar<path.separator><libdir>disable-prefs.jar<path.separator><libdir>gsea-3.0.jar org.genepattern.modules.gsea.CollapseDatasetWrapper -res <expression.dataset> -chip <chip.platform.file> -mode <collapsing.mode> -dev_mode <dev.mode> -include_only_symbols <omit.features.with.no.symbol.match>
 cpuType=any
