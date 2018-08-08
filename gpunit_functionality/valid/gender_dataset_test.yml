@@ -1,0 +1,20 @@
+# Copyright (c) 2003-2018 Broad Institute, Inc., Massachusetts Institute of Technology, and Regents of the University of California.  All rights reserved.
+#module: urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00357:1
+module: GSEACollapseDataset
+name: GSEACollapseDataset gender_dataset_test
+description: A simple test of GSEACollapseDataset using the Gender dataset
+params:
+       expression.dataset: "<%gpunit.testData%>gpunit/GSEACollapseDataset/v1/input/Gender_hgu133a.gct"
+       chip.platform.file: "<%gpunit.testData%>gpunit/GSEACollapseDataset/v1/input/HG_U133A.chip"
+       collapsing.mode: "Max_probe"
+       omit.features.with.no.symbol.match: "true"
+       dev.mode: "true"
+assertions:
+        jobStatus: success
+        files:
+            "Gender_hgu133a_collapsed_to_symbols.gct":
+                diffCmd: diff -q --strip-trailing-cr
+                diff: "<%gpunit.resultData%>gpunit/GSEACollapseDataset/v1/output/valid/gender_dataset_test/Gender_hgu133a_collapsed_to_symbols.gct"
+            "Symbol_to_probe_set_mapping_details.xls":
+                diffCmd: diff -q --strip-trailing-cr
+                diff: "<%gpunit.resultData%>gpunit/GSEACollapseDataset/v1/output/valid/gender_dataset_test/Symbol_to_probe_set_mapping_details.xls"
