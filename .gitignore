@@ -1,5 +1,5 @@
 /bin/
-/gp-gsea.jar
+/GSEACollapseDataset_gp.jar
 /build/
 /gpunit_functionality/test_runs
 /gpunit_functionality/gpunit.runtime_*.properties
