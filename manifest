@@ -1,9 +1,9 @@
-# Copyright (c) 2003-2018 Broad Institute, Inc., Massachusetts Institute of Technology, and Regents of the University of California.  All rights reserved.
+# Copyright (c) 2003-2019 Broad Institute, Inc., Massachusetts Institute of Technology, and Regents of the University of California.  All rights reserved.
 #GSEACollapseDataset
-JVMLevel=1.8
+JVMLevel=11
 LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00357\:999999999
 author=Aravind Subramanian, Broad Institute
-commandLine=<java> -Djava.util.prefs.PreferencesFactory\=com.allaboutbalance.articles.disableprefs.DisabledPreferencesFactory -Djava.awt.headless\=true @LAUNCHER@ -res <expression.dataset> -chip <chip.platform.file> -mode <collapsing.mode> -dev_mode <dev.mode> -include_only_symbols <omit.features.with.no.symbol.match>
+commandLine=<libdir>/gsea-cli.sh CollapseDataset -res <expression.dataset> -chip <chip.platform.file> -mode <collapsing.mode> -dev_mode <dev.mode> -include_only_symbols <omit.features.with.no.symbol.match>
 cpuType=any
 taskDoc=doc.html
 description=Collapse Dataset as implemented by Gene Set Enrichment Analysis
@@ -11,7 +11,7 @@ fileFormat=
 language=Java
 name=GSEACollapseDataset
 os=any
-job.docker.image=genepattern/docker-java18\:0.1
+job.docker.image=genepattern/openjdk11\:0.1
 
 p1_MODE=IN
 p1_TYPE=FILE
@@ -89,4 +89,4 @@ serializedModel=
 taskType=Preprocess & Utilities
 category=beta
 userid=eby@broadinstitute.org
-version=Development revision with GSEA v3.0 code.
+version=Development revision with GSEA v3.1 code.

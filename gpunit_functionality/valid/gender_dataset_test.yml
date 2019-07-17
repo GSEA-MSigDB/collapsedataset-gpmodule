@@ -13,8 +13,8 @@ assertions:
         jobStatus: success
         files:
             "Gender_hgu133a_collapsed_to_symbols.gct":
-                diffCmd: diff -q --strip-trailing-cr
+                diffCmd: ../diffCollapseDatasetResults.sh
                 diff: "<%gpunit.resultData%>gpunit/GSEACollapseDataset/v1/output/valid/gender_dataset_test/Gender_hgu133a_collapsed_to_symbols.gct"
             "Symbol_to_probe_set_mapping_details.xls":
-                diffCmd: diff -q --strip-trailing-cr
+                diffCmd: ../diffCollapseDatasetResults.sh
                 diff: "<%gpunit.resultData%>gpunit/GSEACollapseDataset/v1/output/valid/gender_dataset_test/Symbol_to_probe_set_mapping_details.xls"

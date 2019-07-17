@@ -13,8 +13,8 @@ assertions:
         jobStatus: success
         files:
             "P53_hgu95av2_collapsed_to_symbols.gct":
-                diffCmd: diff -q --strip-trailing-cr
+                diffCmd: ../diffCollapseDatasetResults.sh
                 diff: "<%gpunit.resultData%>gpunit/GSEACollapseDataset/v1/output/valid/P53_omit_false_test/P53_hgu95av2_collapsed_to_symbols.gct"
             "Symbol_to_probe_set_mapping_details.xls":
-                diffCmd: diff -q --strip-trailing-cr
+                diffCmd: ../diffCollapseDatasetResults.sh
                 diff: "<%gpunit.resultData%>gpunit/GSEACollapseDataset/v1/output/valid/P53_omit_false_test/Symbol_to_probe_set_mapping_details.xls"
