@@ -3,7 +3,7 @@
 JVMLevel=11
 LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00357\:999999999
 author=Aravind Subramanian, Broad Institute
-commandLine=<libdir>/gsea-cli.sh CollapseDataset -res <expression.dataset> -chip <chip.platform.file> -mode <collapsing.mode> -dev_mode <dev.mode> -include_only_symbols <omit.features.with.no.symbol.match>
+commandLine=<libdir>/gsea-cli.sh CollapseDataset -res <expression.dataset> -chip <chip.platform.file> -mode <collapsing.mode> -dev_mode <dev.mode> -include_only_symbols <omit.features.with.no.symbol.match> -run_as_genepattern true
 cpuType=any
 taskDoc=doc.html
 description=Collapse Dataset as implemented by Gene Set Enrichment Analysis
