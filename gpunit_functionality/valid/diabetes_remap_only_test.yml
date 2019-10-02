@@ -1,0 +1,20 @@
+# Copyright (c) 2003-2019 Broad Institute, Inc., Massachusetts Institute of Technology, and Regents of the University of California.  All rights reserved.
+#module: urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00357:1
+module: GSEACollapseDataset
+name: GSEACollapseDataset diabetes_remap_only_test
+description: A test of GSEACollapseDataset with an already-collapsed Diabetes dataset using the Remap_only mode
+params:
+       expression.dataset: "<%gpunit.testData%>gpunit/GSEACollapseDataset/v1/input/Diabetes_msigdb7_collapsed.gct"
+       chip.platform.file: "<%gpunit.testData%>gpunit/GSEACollapseDataset/v1/input/Human_Symbol_with_Remapping_MSigDB.v7.0.chip"
+       collapsing.mode: "Remap_only"
+       omit.features.with.no.symbol.match: "true"
+       dev.mode: "true"
+assertions:
+        jobStatus: success
+        files:
+            "Symbol_to_probe_set_mapping_details.xls":
+                diffCmd: diff -q --strip-trailing-cr
+                diff: "<%gpunit.resultData%>gpunit/GSEACollapseDataset/v1/output/valid/diabetes_remap_only_test/Symbol_to_probe_set_mapping_details.xls"
+            "Diabetes_msigdb7_collapsed_remapped_to_symbols.gct":
+                diffCmd: diff -q --strip-trailing-cr
+                diff: "<%gpunit.resultData%>gpunit/GSEACollapseDataset/v1/output/valid/diabetes_remap_only_test/Diabetes_msigdb7_collapsed_remapped_to_symbols.gct"

@@ -44,7 +44,7 @@ p2_value=
 p3_MODE=
 p3_TYPE=TEXT
 p3_default_value=Max_probe
-p3_description=Collapsing mode
+p3_description=Collapsing mode.  It is also possible to remap symbols from one namespace to another without collapsing (an error will occur if multiple source genes map to a single destination gene)
 p3_fileFormat=
 p3_flag=
 p3_name=collapsing.mode
@@ -52,7 +52,7 @@ p3_optional=
 p3_prefix=
 p3_prefix_when_specified=
 p3_type=java.lang.String
-p3_value=Max_probe;Median_of_probes
+p3_value=Max_probe;Median_of_probes;Mean_of_probes;Sum_of_probes;Remap_only
 
 p4_MODE=
 p4_TYPE=TEXT

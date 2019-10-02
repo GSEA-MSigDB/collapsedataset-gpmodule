@@ -1,20 +1,20 @@
 # Copyright (c) 2003-2019 Broad Institute, Inc., Massachusetts Institute of Technology, and Regents of the University of California.  All rights reserved.
 #module: urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00357:1
 module: GSEACollapseDataset
-name: GSEACollapseDataset diabetes_dataset_test
-description: A simple test of GSEACollapseDataset using the Diabetes dataset
+name: GSEACollapseDataset diabetes_omit_false_test
+description: A simple test of GSEACollapseDataset using the diabetes analysis dataset, not omitting features w/o symbol match
 params:
        expression.dataset: "<%gpunit.testData%>gpunit/GSEACollapseDataset/v1/input/Diabetes_hgu133a.gct"
        chip.platform.file: "<%gpunit.testData%>gpunit/GSEACollapseDataset/v1/input/HG_U133A.chip"
        collapsing.mode: "Max_probe"
-       omit.features.with.no.symbol.match: "true"
+       omit.features.with.no.symbol.match: "false"
        dev.mode: "true"
 assertions:
         jobStatus: success
         files:
             "Symbol_to_probe_set_mapping_details.xls":
                 diffCmd: diff -q --strip-trailing-cr
-                diff: "<%gpunit.resultData%>gpunit/GSEACollapseDataset/v1/output/valid/diabetes_dataset_test/Symbol_to_probe_set_mapping_details.xls"
+                diff: "<%gpunit.resultData%>gpunit/GSEACollapseDataset/v1/output/valid/diabetes_omit_false_test/Symbol_to_probe_set_mapping_details.xls"
             "Diabetes_hgu133a_collapsed_to_symbols.gct":
                 diffCmd: diff -q --strip-trailing-cr
-                diff: "<%gpunit.resultData%>gpunit/GSEACollapseDataset/v1/output/valid/diabetes_dataset_test/Diabetes_hgu133a_collapsed_to_symbols.gct"
+                diff: "<%gpunit.resultData%>gpunit/GSEACollapseDataset/v1/output/valid/diabetes_omit_false_test/Diabetes_hgu133a_collapsed_to_symbols.gct"
