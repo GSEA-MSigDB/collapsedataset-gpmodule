@@ -1,12 +1,12 @@
-# Copyright (c) 2003-2020 Broad Institute, Inc., Massachusetts Institute of Technology, and Regents of the University of California.  All rights reserved.
-#module: urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00357:1
-module: GSEACollapseDataset
-name: GSEACollapseDataset diabetes_dataset_test
-description: A simple test of GSEACollapseDataset using the Diabetes dataset
+# Copyright (c) 2003-2021 Broad Institute, Inc., Massachusetts Institute of Technology, and Regents of the University of California.  All rights reserved.
+#module: urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00134:2
+module: CollapseDataset
+name: CollapseDataset diabetes_dataset_test
+description: A simple test of CollapseDataset using the Diabetes dataset
 params:
-       expression.dataset: "<%gpunit.testData%>gpunit/GSEACollapseDataset/v1/input/Diabetes_hgu133a.gct"
-       chip.platform.file: "<%gpunit.testData%>gpunit/GSEACollapseDataset/v1/input/HG_U133A.chip"
-       collapsing.mode: "Max_probe"
+       dataset.file: "<%gpunit.testData%>gpunit/CollapseDataset/v2/input/Diabetes_hgu133a.gct"
+       chip.platform: "<%gpunit.testData%>gpunit/CollapseDataset/v2/input/HG_U133A.chip"
+       collapse.mode: "Max_probe"
        omit.features.with.no.symbol.match: "true"
        dev.mode: "true"
 assertions:
@@ -14,7 +14,7 @@ assertions:
         files:
             "Symbol_to_probe_set_mapping_details.tsv":
                 diffCmd: diff -q --strip-trailing-cr
-                diff: "<%gpunit.resultData%>gpunit/GSEACollapseDataset/v1/output/valid/diabetes_dataset_test/Symbol_to_probe_set_mapping_details.tsv"
+                diff: "<%gpunit.resultData%>gpunit/CollapseDataset/v2/output/valid/diabetes_dataset_test/Symbol_to_probe_set_mapping_details.tsv"
             "Diabetes_hgu133a_collapsed_to_symbols.gct":
                 diffCmd: diff -q --strip-trailing-cr
-                diff: "<%gpunit.resultData%>gpunit/GSEACollapseDataset/v1/output/valid/diabetes_dataset_test/Diabetes_hgu133a_collapsed_to_symbols.gct"
+                diff: "<%gpunit.resultData%>gpunit/CollapseDataset/v2/output/valid/diabetes_dataset_test/Diabetes_hgu133a_collapsed_to_symbols.gct"

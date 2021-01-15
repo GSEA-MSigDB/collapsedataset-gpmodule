@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Copyright (c) 2003-2018 Broad Institute, Inc., Massachusetts Institute of Technology, and Regents of the University of California.  All rights reserved.
+  Copyright (c) 2003-2021 Broad Institute, Inc., Massachusetts Institute of Technology, and Regents of the University of California.  All rights reserved.
 -->
 <project basedir="." default="run_tests.local" name="gpunit_runner">
     <!-- Set the environment variables GPUNIT_HOME and GPUNIT_DATA_HOME with paths to 

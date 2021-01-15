@@ -1,12 +1,12 @@
 # Copyright (c) 2003-2019 Broad Institute, Inc., Massachusetts Institute of Technology, and Regents of the University of California.  All rights reserved.
-#module: urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00357:1
-module: GSEACollapseDataset
-name: GSEACollapseDataset invalid_remap_only_test
-description: A simple test of GSEACollapseDataset with the Remap_only mode causing an error due to duplicate symbols
+#module: urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00134:2
+module: CollapseDataset
+name: CollapseDataset invalid_remap_only_test
+description: A simple test of CollapseDataset with the Remap_only mode causing an error due to duplicate symbols
 params:
-       expression.dataset: "<%gpunit.testData%>gpunit/GSEACollapseDataset/v1/input/Diabetes_hgu133a.gct"
-       chip.platform.file: "<%gpunit.testData%>gpunit/GSEACollapseDataset/v1/input/HG_U133A.chip"
-       collapsing.mode: "Remap_only"
+       dataset.file: "<%gpunit.testData%>gpunit/CollapseDataset/v2/input/Diabetes_hgu133a.gct"
+       chip.platform: "<%gpunit.testData%>gpunit/CollapseDataset/v2/input/HG_U133A.chip"
+       collapse.mode: "Remap_only"
        omit.features.with.no.symbol.match: "true"
        dev.mode: "true"
 assertions:
@@ -15,4 +15,4 @@ assertions:
             "stderr.txt":
                 diffCmd: ../grepMessage.sh Multiple.rows.mapped.to.the.symbol
                 # The following file is unused; keeping it just for reference.
-                diff: "<%gpunit.resultData%>gpunit/GSEACollapseDataset/v1/output/invalid/invalid_remap_only_test/stderr.txt"
+                diff: "<%gpunit.resultData%>gpunit/CollapseDataset/v2/output/invalid/invalid_remap_only_test/stderr.txt"

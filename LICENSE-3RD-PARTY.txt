@@ -1,8 +1,0 @@
-Third-Party Components Acknowledgments for the GSEA Collapse Dataset module
-------------------------------------------- 
-
-The GSEA Collapse Dataset module for GenePattern is distributed, in part, under and subject to the provisions of licenses for:
-
-Disable Preferences, Copyright 2003-2011 Robert Slifka. (http://allaboutbalance.com/articles/disableprefs/).
-
-This module also relies on the GSEA Desktop code base.  For acknowledgments related to that, see the GitHub repository at https://github.com/GSEA-MSigDB/gsea-desktop.
