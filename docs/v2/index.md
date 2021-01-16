@@ -50,6 +50,9 @@ This version of the module is based on the GSEA v4.1.x code base. See the
    - Mean_of_probes: For each sample, use the mean expression value for the probe set.
    - Sum_of_probes: For each sample, sum all the expression values of the probe set.
    - Remap_only: Remap symbols from one namespace to another without collapsing (an error will occur if multiple source genes map to a single destination gene).
+
+## Advanced Parameters 
+
 4. *omit features with no symbol match* <span style="color:red;">*</span>: 
  By default (*true*), the new dataset excludes probes/genes that have no gene symbols. Set to *false* 
  to have the new dataset contain all probes/genes that were in the original dataset.
