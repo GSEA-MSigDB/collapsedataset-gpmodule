@@ -1,14 +1,12 @@
 # CollapseDataset (v2.0.x)
 
-Gene Set Enrichment Analysis
-
 **Author:** Aravind Subramanian, Pablo Tamayo, David Eby; Broad
 Institute
 
 **Contact:**
 
-gp-help@broadinstitute.org
-http://software.broadinstitute.org/cancer/software/genepattern/contact
+- gp-help@broadinstitute.org
+- http://software.broadinstitute.org/cancer/software/genepattern/contact
 
 ## Description
 
@@ -33,14 +31,14 @@ This version of the module is based on the GSEA v4.1.x code base. See the
 ## Parameters 
 <span style="color:red;">*</span> - _required_
 
-1\. dataset file <span style="color:red;">*</span>
+### 1\. dataset file <span style="color:red;">*</span>
 
 This is a file in either [GCT](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#GCT:_Gene_Cluster_Text_file_format_.28.2A.gct.29")
 or [RES](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#RES:_ExpRESsion_.28with_P_and_A_calls.29_file_format_.28.2A.res.29)
 format that contains the expression dataset.
 [GSEA-specific TXT format](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#TXT:_Text_file_format_for_expression_dataset_.28.2A.txt.29) files are also accepted.
 
-2\. chip platform <span style="color:red;">*</span>
+### 2\. chip platform <span style="color:red;">*</span>
 
 This drop-down allows you to specify the chip annotation file, which lists each probe on a chip
 and its matching HUGO gene symbol, used for the expression array.  The chip files listed here
@@ -52,7 +50,7 @@ using 'Upload your own file'
 Please see the [MSigDB 7.0 Release Notes](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/MSigDB_v7.0_Release_Notes)
 for information about symbol remapping.
 
-3\. collapse mode <span style="color:red;">*</span>
+### 3\. collapse mode <span style="color:red;">*</span>
 
 Collapsing mode for sets of multiple probes for a single gene. Selects the expression values to
 use for the single probe that will represent all probe sets for the gene. Options are:
@@ -62,7 +60,7 @@ use for the single probe that will represent all probe sets for the gene. Option
 - Sum_of_probes: For each sample, sum all the expression values of the probe set.
 - Remap_only: Remap symbols from one namespace to another without collapsing (an error will occur if multiple source genes map to a single destination gene).
 
-4\. omit features with no symbol match <span style="color:red;">*</span>
+### 4\. omit features with no symbol match <span style="color:red;">*</span>
 
 By default (*true*), the new dataset excludes probes/genes that have no gene symbols. Set 
 to *false* to have the new dataset contain all probes/genes that were in the original dataset.
@@ -70,14 +68,14 @@ to *false* to have the new dataset contain all probes/genes that were in the ori
 
 ## Input Files
 
-1\. *dataset file:* 
+### 1\. *dataset file:* 
 
 This file contains the expression dataset in [GCT](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#GCT:_Gene_Cluster_Text_file_format_.28.2A.gct.29") 
 or [RES](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#RES:_ExpRESsion_.28with_P_and_A_calls.29_file_format_.28.2A.res.29) format that contains the 
 expression dataset.  
 [GSEA-specific TXT format](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#TXT:_Text_file_format_for_expression_dataset_.28.2A.txt.29) files are also accepted.
 
-2\. *chip platform:* 
+### 2\. *chip platform:* 
 
 This file defines symbol-to-gene mappings for a platform, possibly along with annotations, in 
 [CHIP](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#CHIP:_Chip_file_format_.28.2A.chip.29) format.
@@ -85,7 +83,7 @@ The drop-down provides files from the [MSigDB project](https://www.gsea-msigdb.o
 
 ## Output Files
 
-1\. The collapsed data set (GCT)
+### 1\. The collapsed data set (GCT)
 
 After collapsing, the resulting files are always produced in GCT format even if they had a different input format. 
 
@@ -95,17 +93,13 @@ Input expression datasets with the spaces in their file names may cause errors.
 
 ## Platform Dependencies
 
-**Task Type:**  
-Gene List Selection
+**Task Type:**  Gene List Selection
 
-**CPU Type:**  
-any
+**CPU Type:**  any
 
-**Operating System:**  
-any
+**Operating System:**  any
 
-**Language:**  
-Java
+**Language:**  Java
 
 ## Version Comments
 
