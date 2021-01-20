@@ -6,7 +6,7 @@ Institute
 **Contact:**
 
 - gp-help@broadinstitute.org
-- http://software.broadinstitute.org/cancer/software/genepattern/contact
+- [http://software.broadinstitute.org/cancer/software/genepattern/contact](http://software.broadinstitute.org/cancer/software/genepattern/contact)
 
 ## Description
 
@@ -14,7 +14,7 @@ Collapses expression values from multiple input ids that map to a single target 
 
 ## Summary
 
-CollapseDataset utilizes Probe Set ID to Gene Symbol mappings from a CHIP file to creates 
+CollapseDataset utilizes Probe Set ID to Gene Symbol mappings from a CHIP file to create 
 a new data set where all probe set expression values for a given gene have been collapsed 
 into a single expression value for each sample. It does this for all probe sets in the 
 original data set. You can choose the method of determining which value will represent all 
