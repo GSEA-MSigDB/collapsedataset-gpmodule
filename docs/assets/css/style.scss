@@ -84,9 +84,22 @@ section {
   margin-top: 150px;
 }
 
-@media print, screen and (max-width: 1060px) {
+@media print, screen and (min-width: 1060px) {
   section {
-    max-width: 1000px;
+    max-width: none;
+    width: 70%;
+  }
+}
+
+@media print, screen and (min-width: 1440px) {
+  section {
+    width: 80%;
+  }
+}
+
+@media print, screen and (min-width: 1920px) {
+  section {
+    width: 90%;
   }
 }
 
@@ -94,9 +107,9 @@ nav {
   a {
     color:#333;
   }
-  width: 230px; 
+  width: 300px; 
   top: 150px;
-  margin-left:-380px;
+  margin-left:-580px;
   text-align: left;
 
   ul {
