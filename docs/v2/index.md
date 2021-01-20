@@ -10,18 +10,19 @@ Institute
 
 ## Description
 
-Collapses all probe set values for a gene into a single vector of values
+Collapses expression values from multiple input ids that map to a single target gene to a single value on a per-sample basis.
 
 ## Summary
 
-CollapseDataset creates a new data set by collapsing all probe set expression values for
-a given gene into a single expression value. It does this for all probe sets in the original
-data set. You can choose the method of determining which value will represent all
-probes in a probe set for a given gene: the maximum expression value for the probe set
-or the median. The new data set uses gene symbols as the gene identifier format.
-Collapsing the probe sets eliminates multiple probes, which can inflate gene set
-enrichment scores, and facilitates the biological interpretation of the gene set enrichment
-analysis results.
+CollapseDataset utilizes Probe Set ID to Gene Symbol mappings from a CHIP file to creates 
+a new data set where all probe set expression values for a given gene have been collapsed 
+into a single expression value for each sample. It does this for all probe sets in the 
+original data set. You can choose the method of determining which value will represent all 
+probes in a probe set for a given gene: the maximum expression value for the probe set, the 
+median value, or the sum of all values. The new data set uses gene symbols as the gene 
+identifier format. Collapsing the probe sets eliminates multiple probes, which can inflate 
+gene set enrichment scores, and facilitates the biological interpretation of the gene set 
+enrichment analysis results.
 
 ## References
 
