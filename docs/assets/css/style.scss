@@ -81,8 +81,13 @@ header {
 }
 
 section {
-  width: 1050px;
   margin-top: 150px;
+}
+
+@media print, screen and (max-width: 1060px) {
+  section {
+    max-width: 1000px;
+  }
 }
 
 nav {
@@ -91,7 +96,7 @@ nav {
   }
   width: 230px; 
   top: 150px;
-  margin-left:-580px;
+  margin-left:-380px;
   text-align: left;
 
   ul {
