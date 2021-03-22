@@ -54,7 +54,11 @@ This version of the module is based on the GSEA v4.1.x code base. See the
 
 ## Advanced Parameters 
 
-4. *omit features with no symbol match*: 
+4. *output.file.name*:
+ Optionally, rename the result file to a user-supplied name.  By default, this will be &lt;dataset.file_basename&gt;_collapsed (for any of the collapsing modes) or 
+ &lt;dataset.file_basename&gt;_remapped (for Remap_only). 
+
+5. *omit features with no symbol match*: 
  By default (*true*), the new dataset excludes probes/genes that have no gene symbols. Set to *false* 
  to have the new dataset contain all probes/genes that were in the original dataset.
 
@@ -92,6 +96,7 @@ Input files with spaces or special characters in their file names may cause erro
 |Version|Release Date|Description|
 |  :--  |     :--    |   :--     |
 |2.0.0  |2021-01-14  |Switched to the GSEA code base.  Added new collapse.mode options and omit.features.with.no.symbol.match parameter.|
+|2.0.1  |2021-03-22  |Minor doc updates.|
 
 
 Copyright © 2003-2021 Broad Institute, Inc., Massachusetts Institute of
