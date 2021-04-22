@@ -97,6 +97,7 @@ Input files with spaces or special characters in their file names may cause erro
 |  :--  |     :--    |   :--     |
 |2.0.0  |2021-01-14  |Switched to the GSEA code base.  Added new collapse.mode options and omit.features.with.no.symbol.match parameter.|
 |2.0.1  |2021-03-22  |Minor doc updates.|
+|2.0.2  |2021-03-22  |Fixed minor typo.|
 
 
 Copyright © 2003-2021 Broad Institute, Inc., Massachusetts Institute of
