@@ -1,4 +1,4 @@
-# CollapseDataset (v2.0.x)
+# CollapseDataset (v2.1.x)
 
 **Author:** Aravind Subramanian, Pablo Tamayo, David Eby; Broad
 Institute
@@ -26,7 +26,7 @@ enrichment analysis results.
 
 ## References
 
-This version of the module is based on the GSEA v4.1.x code base. See the 
+This version of the module is based on the GSEA v4.2.x code base. See the 
 [GSEA Website](https://www.gsea-msigdb.org/gsea/) for more details.
 
 ## Parameters 
@@ -98,6 +98,7 @@ Input files with spaces or special characters in their file names may cause erro
 |2.0.0  |2021-01-14  |Switched to the GSEA code base.  Added new collapse.mode options and omit.features.with.no.symbol.match parameter.|
 |2.0.1  |2021-03-22  |Minor doc updates.|
 |2.0.2  |2021-03-22  |Fixed minor typo.|
+|2.1.0  |2021-11-5   |Updated with the GSEA Desktop 4.2.0 code base with numerous bug fixes.  Fixes some issues handling datasets with missing values.  Adds an output file name parameter.|
 
 
 Copyright © 2003-2021 Broad Institute, Inc., Massachusetts Institute of
