@@ -2,7 +2,7 @@
 #module: urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00134:2
 module: CollapseDataset
 name: CollapseDataset NaN_Missing_median_test
-description: A test of CollapseDataset using the Diabetes dataset handling NaN and Missing values, collapse to median of probes  Tests are centered on HTR4, HTR7, NPAL2, NPAL3, GSTK1.
+description: A test of CollapseDataset using the Diabetes dataset handling Infinite, NaN and Missing values, collapse to median of probes  Tests are centered on HTR4, HTR6, FLJ22639, HTR7, NPAL2, NPAL3, GSTK1, BCR.
 params:
        dataset.file: "<%gpunit.testData%>gpunit/CollapseDataset/v2/input/Diabetes_hgu133a_NaN_missing_vals.gct"
        chip.platform: "<%gpunit.testData%>gpunit/CollapseDataset/v2/input/HG_U133A.chip"
