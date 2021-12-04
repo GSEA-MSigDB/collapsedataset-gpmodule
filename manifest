@@ -52,7 +52,7 @@ p3_optional=
 p3_prefix=
 p3_prefix_when_specified=
 p3_type=java.lang.String
-p3_value=Max_probe;Median_of_probes;Mean_of_probes;Sum_of_probes;Remap_only
+p3_value=Max_probe;Median_of_probes;Mean_of_probes;Sum_of_probes;Abs_max_of_probes;Remap_only
  
 p4_default_value=
 p4_description=The output file name
@@ -97,4 +97,4 @@ serializedModel=
 taskType=Preprocess & Utilities
 categories=gsea
 userid=eby@broadinstitute.org
-version=Updated with the GSEA Desktop 4.2.0 code base with numerous bug fixes.  Fixes some issues handling datasets with missing values.  Adds an output file name parameter.
+version=Updated with the GSEA Desktop 4.2.0 code base with numerous bug fixes.  Adds the Abs_max_of_probes collapse mode.  Fixes some issues handling datasets with missing values.  Improved warnings and logging.  Adds an output file name parameter.

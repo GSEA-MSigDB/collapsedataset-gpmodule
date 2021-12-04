@@ -50,6 +50,9 @@ This version of the module is based on the GSEA v4.2.x code base. See the
    - Median_of_probes: For each sample, use the median expression value for the probe set.
    - Mean_of_probes: For each sample, use the mean expression value for the probe set.
    - Sum_of_probes: For each sample, sum all the expression values of the probe set.
+   - Abs_max_of_probes: For each sample, use the expression value for the probe set with the maximum **absolute value**.  Note that each value retains its original sign but is chosen based on absolute value.
+     In other words, the largest magnitude value is used.  While this method is useful with computational-based input datasets it is generally **not recommended** for use with quantification-based expression 
+     measures such as counts or microarray fluorescence.
    - Remap_only: Remap symbols from one namespace to another without collapsing (an error will occur if multiple source genes map to a single destination gene).
 
 ## Advanced Parameters 
@@ -98,7 +101,7 @@ Input files with spaces or special characters in their file names may cause erro
 |2.0.0  |2021-01-14  |Switched to the GSEA code base.  Added new collapse.mode options and omit.features.with.no.symbol.match parameter.|
 |2.0.1  |2021-03-22  |Minor doc updates.|
 |2.0.2  |2021-03-22  |Fixed minor typo.|
-|2.1.0  |2021-11-5   |Updated with the GSEA Desktop 4.2.0 code base with numerous bug fixes.  Fixes some issues handling datasets with missing values.  Adds an output file name parameter.|
+|2.1.0  |2021-11-5   |Updated with the GSEA Desktop 4.2.0 code base with numerous bug fixes.  Adds the Abs_max_of_probes collapse mode.  Fixes some issues handling datasets with missing values.  Improved warnings and logging.  Adds an output file name parameter.|
 
 
 Copyright © 2003-2021 Broad Institute, Inc., Massachusetts Institute of
