@@ -97,4 +97,4 @@ serializedModel=
 taskType=Preprocess & Utilities
 categories=gsea
 userid=eby@broadinstitute.org
-version=Updated with the GSEA Desktop 4.2.0 code base with numerous bug fixes.  Adds the Abs_max_of_probes collapse mode.  Fixes some issues handling datasets with missing values.  Improved warnings and logging.  Adds an output file name parameter.
+version=Updated with the GSEA Desktop 4.2.0 code base with numerous bug fixes. Adds the Abs_max_of_probes collapse mode. Fixes some issues handling datasets with missing values. Improved warnings and logging. Adds an output file name parameter. Fixed bugs in weighted_p1.5 scoring.
