@@ -1,0 +1,24 @@
+# Copyright (c) 2003-2021 Broad Institute, Inc., Massachusetts Institute of Technology, and Regents of the University of California.  All rights reserved.
+#module: urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00134:2
+module: CollapseDataset
+name: CollapseDataset NaN_Missing_mean_test
+description: A test of CollapseDataset using the Diabetes dataset handling Infinite, NaN and Missing values, collapse to mean of probes  Tests are centered on HTR4, HTR6, FLJ22639, HTR7, NPAL2, NPAL3, GSTK1, BCR.
+params:
+       dataset.file: "<%gpunit.testData%>gpunit/CollapseDataset/v2/input/Diabetes_hgu133a_NaN_missing_vals.gct"
+       chip.platform: "<%gpunit.testData%>gpunit/CollapseDataset/v2/input/HG_U133A.chip"
+       collapse.mode: "Mean_of_probes"
+       omit.features.with.no.symbol.match: "true"
+       dev.mode: "true"
+assertions:
+        jobStatus: success
+        files:
+            "Symbol_to_probe_set_mapping_details.tsv":
+                diffCmd: diff -q --strip-trailing-cr
+                diff: "<%gpunit.resultData%>gpunit/CollapseDataset/v2/output/valid/NaN_Missing_mean_test/Symbol_to_probe_set_mapping_details.tsv"
+            "Diabetes_hgu133a_NaN_missing_vals_collapsed_to_symbols.gct":
+                diffCmd: diff -q --strip-trailing-cr
+                diff: "<%gpunit.resultData%>gpunit/CollapseDataset/v2/output/valid/NaN_Missing_mean_test/Diabetes_hgu133a_NaN_missing_vals_collapsed_to_symbols.gct"
+            "stdout.txt":
+                diffCmd: ../grepMessages.sh
+                diff: "<%gpunit.resultData%>gpunit/CollapseDataset/v2/output/valid/NaN_Missing_mean_test/stdoutMatches.txt"
+                

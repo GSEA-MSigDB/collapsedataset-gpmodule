@@ -3,7 +3,7 @@
 JVMLevel=11
 LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00134\:999999999
 author=Aravind Subramanian, Josh Gould, David Eby; Broad Institute
-commandLine=/opt/gsea/GSEA_4.1.0/gsea-cli.sh CollapseDataset -res <dataset.file> -chip <chip.platform> -mode <collapse.mode> -dev_mode <dev.mode> -include_only_symbols <output.file.name> <omit.features.with.no.symbol.match> -run_as_genepattern true
+commandLine=/opt/gsea/GSEA_4.2.0/gsea-cli.sh CollapseDataset -res <dataset.file> -chip <chip.platform> -mode <collapse.mode> -dev_mode <dev.mode> -include_only_symbols <output.file.name> <omit.features.with.no.symbol.match> -run_as_genepattern true
 cpuType=any
 taskDoc=doc.html
 description=Collapses expression values from multiple input ids that map to a single target gene to a single value on a per-sample basis
@@ -11,7 +11,7 @@ fileFormat=
 language=Java
 name=CollapseDataset
 os=any
-job.docker.image=genepattern/gsea_4.1.0\:0.1
+job.docker.image=genepattern/gsea_4.2.0\:0.1
 
 p1_MODE=IN
 p1_TYPE=FILE
@@ -52,7 +52,7 @@ p3_optional=
 p3_prefix=
 p3_prefix_when_specified=
 p3_type=java.lang.String
-p3_value=Max_probe;Median_of_probes;Mean_of_probes;Sum_of_probes;Remap_only
+p3_value=Max_probe;Median_of_probes;Mean_of_probes;Sum_of_probes;Abs_max_of_probes;Remap_only
  
 p4_default_value=
 p4_description=The output file name
@@ -97,4 +97,4 @@ serializedModel=
 taskType=Preprocess & Utilities
 categories=gsea
 userid=eby@broadinstitute.org
-version=Fixed minor typo.
+version=Updated with the GSEA Desktop 4.2.0 code base with numerous bug fixes. Adds the Abs_max_of_probes collapse mode. Fixes some issues handling datasets with missing values. Improved warnings and logging. Adds an output file name parameter. Fixed bugs in weighted_p1.5 scoring.
