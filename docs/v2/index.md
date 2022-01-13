@@ -103,6 +103,7 @@ Input files with spaces or special characters in their file names may cause erro
 |2.0.2  |2021-03-22  |Fixed minor typo.|
 |2.1.0  |2021-12-17  |Updated with the GSEA Desktop 4.2.0 code base with numerous bug fixes. Adds the Abs_max_of_probes collapse mode. Fixes some issues handling datasets with missing values. Improved warnings and logging. Adds an output file name parameter. Fixed bugs in weighted_p1.5 scoring.|
 |2.1.1  |2021-12-23  |Updated with the GSEA Desktop 4.2.1 code base. Updated to Log4J 2.17.0. TXT file parser bug fix.|
+|2.1.2  |2022-1-12   |Fixed a typo in the command line.|
 
 
 Copyright © 2003-2021 Broad Institute, Inc., Massachusetts Institute of
