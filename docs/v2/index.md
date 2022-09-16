@@ -106,6 +106,7 @@ Input files with spaces or special characters in their file names may cause erro
 |2.1.2  |2022-1-12   |Fixed a typo in the command line.|
 |2.1.3  |2022-1-20   |Updated to Log4J 2.17.1.|
 |2.1.4  |2022-3-22   |Removed Log4J entirely from the code base.  Fixed weighted_p1.5 computation.  Added min dataset size warnings.|
+|2.1.5  |2022-9-15   |Updated to Human MSigDB v2022.1.Hs. Direct support for Mouse MSigDB 2022.1.Mm is not yet available|
 
 Copyright © 2003-2022 Broad Institute, Inc., Massachusetts Institute of
 Technology, and Regents of the University of California. All rights
