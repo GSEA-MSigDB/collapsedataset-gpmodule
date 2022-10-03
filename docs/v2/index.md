@@ -1,4 +1,4 @@
-# CollapseDataset (v2.1.x)
+# CollapseDataset (v2.2.x)
 
 **Author:** Aravind Subramanian, Pablo Tamayo, David Eby; Broad
 Institute
@@ -26,7 +26,7 @@ enrichment analysis results.
 
 ## References
 
-This version of the module is based on the GSEA v4.2.x code base. See the 
+This version of the module is based on the GSEA v4.3.x code base. See the 
 [GSEA Website](https://www.gsea-msigdb.org/gsea/) for more details.
 
 ## Parameters 
@@ -107,6 +107,7 @@ Input files with spaces or special characters in their file names may cause erro
 |2.1.3  |2022-1-20   |Updated to Log4J 2.17.1.|
 |2.1.4  |2022-3-22   |Removed Log4J entirely from the code base.  Fixed weighted_p1.5 computation.  Added min dataset size warnings.|
 |2.1.5  |2022-9-15   |Updated to Human MSigDB v2022.1.Hs. Direct support for Mouse MSigDB 2022.1.Mm is not yet available|
+|2.2.0  |2022-10-2   |Updated to Human MSigDB v2022.1.Hs and Mouse MSigDB 2022.1.Mm.|
 
 Copyright © 2003-2022 Broad Institute, Inc., Massachusetts Institute of
 Technology, and Regents of the University of California. All rights

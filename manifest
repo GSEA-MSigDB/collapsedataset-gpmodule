@@ -3,7 +3,7 @@
 JVMLevel=11
 LSID=urn\:lsid\:broad.mit.edu\:cancer.software.genepattern.module.analysis\:00134\:999999999
 author=Aravind Subramanian, Josh Gould, David Eby; Broad Institute
-commandLine=/opt/gsea/GSEA_4.2.3/gsea-cli.sh CollapseDataset -res <dataset.file> -chip <chip.platform> -mode <collapse.mode> -dev_mode <dev.mode> -include_only_symbols <omit.features.with.no.symbol.match> <output.file.name> -run_as_genepattern true
+commandLine=/opt/gsea/GSEA_4.3.2/gsea-cli.sh CollapseDataset -res <dataset.file> -chip <chip.platform> -mode <collapse.mode> -dev_mode <dev.mode> -include_only_symbols <omit.features.with.no.symbol.match> <output.file.name> -run_as_genepattern true
 cpuType=any
 taskDoc=doc.html
 description=Collapses expression values from multiple input ids that map to a single target gene to a single value on a per-sample basis
@@ -11,7 +11,7 @@ fileFormat=
 language=Java
 name=CollapseDataset
 os=any
-job.docker.image=genepattern/gsea_4.2.3\:0.1
+job.docker.image=genepattern/gsea_4.3.2\:0.1
 
 p1_MODE=IN
 p1_TYPE=FILE
@@ -28,8 +28,7 @@ p1_value=
 
 p2_MODE=IN
 p2_TYPE=FILE
-p2_choiceDir=ftp\://ftp.broadinstitute.org/pub/gsea/annotations_versioned/
-p2_choiceDirFilter=*.v2022.1.Hs.chip
+p2_choiceDir=https://www.gsea-msigdb.org/gsea/msigdb/gp_modules_chip.json
 p2_default_value=
 p2_description=DNA Chip (array) annotation file from GSEA website.  Upload your own chip file if the one corresponding to your DNA Microarray platform is not listed in the drop-down menu.  A chip file is only required if collapse dataset is set to true.
 p2_fileFormat=chip
@@ -97,4 +96,4 @@ serializedModel=
 taskType=Preprocess & Utilities
 categories=gsea
 userid=eby@broadinstitute.org
-version=Updated to Human MSigDB v2022.1.Hs. Direct support for Mouse MSigDB 2022.1.Mm is not yet available
+version=Updated to Human MSigDB v2022.1.Hs and Mouse MSigDB 2022.1.Mm.
