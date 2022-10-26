@@ -33,16 +33,16 @@ This version of the module is based on the GSEA v4.3.x code base. See the
 <span style="color:red;">*</span> - _required_
 
 1. *dataset file* <span style="color:red;">*</span>:  This is a file in either 
- [GCT](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#GCT:_Gene_Cluster_Text_file_format_.28.2A.gct.29")
- or [RES](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#RES:_ExpRESsion_.28with_P_and_A_calls.29_file_format_.28.2A.res.29)
+ [GCT](https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#GCT:_Gene_Cluster_Text_file_format_.28.2A.gct.29")
+ or [RES](https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#RES:_ExpRESsion_.28with_P_and_A_calls.29_file_format_.28.2A.res.29)
  format that contains the expression dataset.
- [GSEA-specific TXT format](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#TXT:_Text_file_format_for_expression_dataset_.28.2A.txt.29) files are also accepted.
+ [GSEA-specific TXT format](https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#TXT:_Text_file_format_for_expression_dataset_.28.2A.txt.29) files are also accepted.
 2. *chip platform* <span style="color:red;">*</span>: This drop-down allows you to specify 
  the chip annotation file, which lists each probe on a chip and its matching HUGO gene symbol, 
  used for the expression array.  The chip files listed here are from the 
  [GSEA website](https://www.gsea-msigdb.org/gsea/downloads.jsp).  If you used a file not listed 
  here, you will need to provide it 
- (in [CHIP](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#CHIP:_Chip_file_format_.28.2A.chip.29) format) 
+ (in [CHIP](https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#CHIP:_Chip_file_format_.28.2A.chip.29) format) 
  using 'Upload your own file'.  Please see the [MSigDB 7.0 Release Notes](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/MSigDB_v7.0_Release_Notes)
  for information about symbol remapping.
 3. *collapse mode* <span style="color:red;">*</span>: Collapsing mode for sets of multiple probes for a single gene. Selects the expression values to use for the single probe that will represent all probe sets for the gene. Options are:
@@ -68,12 +68,12 @@ This version of the module is based on the GSEA v4.3.x code base. See the
 
 ## Input Files
 
-1. *dataset file:*  This file contains the expression dataset in [GCT](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#GCT:_Gene_Cluster_Text_file_format_.28.2A.gct.29") 
-or [RES](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#RES:_ExpRESsion_.28with_P_and_A_calls.29_file_format_.28.2A.res.29) format that contains the 
+1. *dataset file:*  This file contains the expression dataset in [GCT](https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#GCT:_Gene_Cluster_Text_file_format_.28.2A.gct.29") 
+or [RES](https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#RES:_ExpRESsion_.28with_P_and_A_calls.29_file_format_.28.2A.res.29) format that contains the 
 expression dataset.  
-[GSEA-specific TXT format](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#TXT:_Text_file_format_for_expression_dataset_.28.2A.txt.29) files are also accepted.
+[GSEA-specific TXT format](https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#TXT:_Text_file_format_for_expression_dataset_.28.2A.txt.29) files are also accepted.
 2. *chip platform:* This file defines symbol-to-gene mappings for a platform, possibly along with annotations, in 
-[CHIP](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#CHIP:_Chip_file_format_.28.2A.chip.29) format.
+[CHIP](https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#CHIP:_Chip_file_format_.28.2A.chip.29) format.
 The drop-down provides files from the [MSigDB project](https://www.gsea-msigdb.org) for common platforms, but custom files may also be provided.
 
 ## Output Files
