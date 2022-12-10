@@ -30,23 +30,23 @@ This version of the module is based on the GSEA v4.3.x code base. See the
 [GSEA Website](https://www.gsea-msigdb.org/gsea/) for more details.
 
 ## Parameters 
-<span style="color:red;">*</span> - _required_
+<span style="color:red;">*</span> - *required*
 
-1. *dataset file* <span style="color:red;">*</span>:  This is a file in either 
+1. *dataset file*<span style="color:red;">*</span>:  This is a file in either 
  [GCT](https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#GCT:_Gene_Cluster_Text_file_format_.28.2A.gct.29")
  or [RES](https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#RES:_ExpRESsion_.28with_P_and_A_calls.29_file_format_.28.2A.res.29)
  format that contains the expression dataset.
  [GSEA-specific TXT format](https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#TXT:_Text_file_format_for_expression_dataset_.28.2A.txt.29) files are also accepted.
 2. *chip platform* <span style="color:red;">*</span>: This drop-down allows you to specify 
  the chip annotation file, which lists each probe on a chip and its matching HUGO gene symbol, 
- used for the expression array.  The chip files listed here are from the 
- [GSEA website](https://www.gsea-msigdb.org/gsea/downloads.jsp).  If you used a file not listed 
+ used for the expression array. The chip files listed here are from the 
+ [GSEA website](https://www.gsea-msigdb.org/gsea/downloads.jsp). If you used a file not listed 
  here, you will need to provide it 
- (in [CHIP](https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#CHIP:_Chip_file_format_.28.2A.chip.29) format) 
+ (in [CHIP](https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#CHIP:_Chip_file_format_.28.2A.chip.29) format) 
  using 'Upload your own file'.  Please see the [MSigDB 7.0 Release Notes](http://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/MSigDB_v7.0_Release_Notes)
  for information about symbol remapping.
 3. *collapse mode* <span style="color:red;">*</span>: Collapsing mode for sets of multiple probes for a single gene. Selects the expression values to use for the single probe that will represent all probe sets for the gene. Options are:
-   - Max_probe (default): For each sample, use the maximum expression value for the probe set.  That is, if there are three probes that map to a single gene, the expression value that will represent the collapsed probe set will be the maximum expression value from those three probes.
+   - Max_probe (default): For each sample, use the maximum expression value for the probe set. That is, if there are three probes that map to a single gene, the expression value that will represent the collapsed probe set will be the maximum expression value from those three probes.
    - Median_of_probes: For each sample, use the median expression value for the probe set.
    - Mean_of_probes: For each sample, use the mean expression value for the probe set.
    - Sum_of_probes: For each sample, sum all the expression values of the probe set.
@@ -70,9 +70,9 @@ This version of the module is based on the GSEA v4.3.x code base. See the
 
 1. *dataset file:*  This file contains the expression dataset in [GCT](https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#GCT:_Gene_Cluster_Text_file_format_.28.2A.gct.29") 
 or [RES](https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#RES:_ExpRESsion_.28with_P_and_A_calls.29_file_format_.28.2A.res.29) format that contains the 
-expression dataset.  
+expression dataset.
 [GSEA-specific TXT format](https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#TXT:_Text_file_format_for_expression_dataset_.28.2A.txt.29) files are also accepted.
-2. *chip platform:* This file defines symbol-to-gene mappings for a platform, possibly along with annotations, in 
+2. *chip platform:* This file defines symbol-to-gene mappings for a platform, possibly along with annotations, in 
 [CHIP](https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#CHIP:_Chip_file_format_.28.2A.chip.29) format.
 The drop-down provides files from the [MSigDB project](https://www.gsea-msigdb.org) for common platforms, but custom files may also be provided.
 
@@ -96,18 +96,70 @@ Input files with spaces or special characters in their file names may cause erro
 
 ## Version Comments
 
-|Version|Release Date|Description|
-|  :--  |     :--    |   :--     |
-|2.0.0  |2021-01-14  |Switched to the GSEA code base.  Added new collapse.mode options and omit.features.with.no.symbol.match parameter.|
-|2.0.1  |2021-03-22  |Minor doc updates.|
-|2.0.2  |2021-03-22  |Fixed minor typo.|
-|2.1.0  |2021-12-17  |Updated with the GSEA Desktop 4.2.0 code base with numerous bug fixes. Adds the Abs_max_of_probes collapse mode. Fixes some issues handling datasets with missing values. Improved warnings and logging. Adds an output file name parameter. Fixed bugs in weighted_p1.5 scoring.|
-|2.1.1  |2021-12-23  |Updated with the GSEA Desktop 4.2.1 code base. Updated to Log4J 2.17.0. TXT file parser bug fix.|
-|2.1.2  |2022-1-12   |Fixed a typo in the command line.|
-|2.1.3  |2022-1-20   |Updated to Log4J 2.17.1.|
-|2.1.4  |2022-3-22   |Removed Log4J entirely from the code base.  Fixed weighted_p1.5 computation.  Added min dataset size warnings.|
-|2.1.5  |2022-9-15   |Updated to Human MSigDB v2022.1.Hs. Direct support for Mouse MSigDB 2022.1.Mm is not yet available|
-|2.2.0  |2022-10-2   |Updated to Human MSigDB v2022.1.Hs and Mouse MSigDB 2022.1.Mm.|
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Version</th>
+<th align="left">Release Date</th>
+<th align="left">Description</th>
+</tr>
+<tbody>
+<tr class="odd">
+<td align="left">2.0.0</td>
+<td align="left">2021-01-14</td>
+<td align="left">Switched to the GSEA code base.  Added new collapse.mode options and omit.features.with.no.symbol.match parameter.</td>
+</tr>
+<tr class="even">
+<td align="left">2.0.1</td>
+<td align="left">2021-03-22 </td>
+<td align="left">Minor doc updates.</td>
+</tr>
+<tr class="odd">
+<td align="left">2.0.2</td>
+<td align="left">2021-03-22</td>
+<td align="left">Fixed minor typo.</td>
+</tr>
+<tr class="even">
+<td align="left">2.1.0</td>
+<td align="left">2021-12-17</td>
+<td align="left">Updated with the GSEA Desktop 4.2.0 code base with numerous bug fixes. Adds the Abs_max_of_probes collapse mode. Fixes some issues handling datasets with missing values. Improved warnings and logging. Adds an output file name parameter. Fixed bugs in weighted_p1.5 scoring.</td>
+</tr>
+<tr class="odd">
+<td align="left">2.1.1</td>
+<td align="left">2021-12-23</td>
+<td align="left">Updated with the GSEA Desktop 4.2.1 code base. Updated to Log4J 2.17.0. TXT file parser bug fix.</td>
+</tr>
+<tr class="even">
+<td align="left">2.1.2 </td>
+<td align="left">2022-1-12</td>
+<td align="left">Fixed a typo in the command line.</td>
+</tr>
+<tr class="odd">
+<td align="left">2.1.3</td>
+<td align="left">2022-1-20</td>
+<td align="left">Updated to Log4J 2.17.1.</td>
+</tr>
+<tr class="even">
+<td align="left">2.1.4</td>
+<td align="left">2022-3-22</td>
+<td align="left">Removed Log4J entirely from the code base.  Fixed weighted_p1.5 computation.  Added min dataset size warnings.</td>
+</tr>
+<tr class="odd">
+<td align="left">2.1.5</td>
+<td align="left">2022-9-15</td>
+<td align="left">Updated to Human MSigDB v2022.1.Hs. Direct support for Mouse MSigDB 2022.1.Mm is not yet available.</td>
+</tr>
+<tr class="even">
+<td align="left">2.2.0</td>
+<td align="left">2022-10-2</td>
+<td align="left">Updated to Human MSigDB v2022.1.Hs and Mouse MSigDB 2022.1.Mm.</td>
+</tr>
+</tbody>
+</table>
 
 Copyright © 2003-2022 Broad Institute, Inc., Massachusetts Institute of
 Technology, and Regents of the University of California. All rights
