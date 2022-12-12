@@ -30,6 +30,7 @@ This version of the module is based on the GSEA v4.3.x code base. See the
 [GSEA Website](https://www.gsea-msigdb.org/gsea/) for more details.
 
 ## Parameters 
+
 <span style="color:red;">*</span> - *required*
 
 1. *dataset file*<span style="color:red;">*</span>:  This is a file in either 
