@@ -98,8 +98,9 @@ Input files with spaces or special characters in their file names may cause erro
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="5%" />
+<col width="20%" />
+<col width="75%" />
 </colgroup>
 <thead>
 <tr class="header">
