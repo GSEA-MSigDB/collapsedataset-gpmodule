@@ -30,6 +30,7 @@ This version of the module is based on the GSEA v4.3.x code base. See the
 [GSEA Website](https://www.gsea-msigdb.org/gsea/) for more details.
 
 ## Parameters 
+
 <span style="color:red;">*</span> - *required*
 
 1. *dataset file*<span style="color:red;">*</span>:  This is a file in either 
@@ -96,72 +97,17 @@ Input files with spaces or special characters in their file names may cause erro
 
 ## Version Comments
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Version</th>
-<th align="left">Release Date</th>
-<th align="left">Description</th>
-</tr>
-<tbody>
-<tr class="odd">
-<td align="left">2.0.0</td>
-<td align="left">2021-01-14</td>
-<td align="left">Switched to the GSEA code base.  Added new collapse.mode options and omit.features.with.no.symbol.match parameter.</td>
-</tr>
-<tr class="even">
-<td align="left">2.0.1</td>
-<td align="left">2021-03-22 </td>
-<td align="left">Minor doc updates.</td>
-</tr>
-<tr class="odd">
-<td align="left">2.0.2</td>
-<td align="left">2021-03-22</td>
-<td align="left">Fixed minor typo.</td>
-</tr>
-<tr class="even">
-<td align="left">2.1.0</td>
-<td align="left">2021-12-17</td>
-<td align="left">Updated with the GSEA Desktop 4.2.0 code base with numerous bug fixes. Adds the Abs_max_of_probes collapse mode. Fixes some issues handling datasets with missing values. Improved warnings and logging. Adds an output file name parameter. Fixed bugs in weighted_p1.5 scoring.</td>
-</tr>
-<tr class="odd">
-<td align="left">2.1.1</td>
-<td align="left">2021-12-23</td>
-<td align="left">Updated with the GSEA Desktop 4.2.1 code base. Updated to Log4J 2.17.0. TXT file parser bug fix.</td>
-</tr>
-<tr class="even">
-<td align="left">2.1.2 </td>
-<td align="left">2022-1-12</td>
-<td align="left">Fixed a typo in the command line.</td>
-</tr>
-<tr class="odd">
-<td align="left">2.1.3</td>
-<td align="left">2022-1-20</td>
-<td align="left">Updated to Log4J 2.17.1.</td>
-</tr>
-<tr class="even">
-<td align="left">2.1.4</td>
-<td align="left">2022-3-22</td>
-<td align="left">Removed Log4J entirely from the code base.  Fixed weighted_p1.5 computation.  Added min dataset size warnings.</td>
-</tr>
-<tr class="odd">
-<td align="left">2.1.5</td>
-<td align="left">2022-9-15</td>
-<td align="left">Updated to Human MSigDB v2022.1.Hs. Direct support for Mouse MSigDB 2022.1.Mm is not yet available.</td>
-</tr>
-<tr class="even">
-<td align="left">2.2.0</td>
-<td align="left">2022-10-2</td>
-<td align="left">Updated to Human MSigDB v2022.1.Hs and Mouse MSigDB 2022.1.Mm.</td>
-</tr>
-</tbody>
-</table>
+- **2.2.0** (2022-10-2): Updated to Human MSigDB v2022.1.Hs and Mouse MSigDB 2022.1.Mm.
+- **2.1.5** (2022-9-15): Updated to Human MSigDB v2022.1.Hs. Direct support for Mouse MSigDB 2022.1.Mm is not yet available.
+- **2.1.4** (2022-3-22): Removed Log4J entirely from the code base. Fixed weighted_p1.5 computation.  Added min dataset size warnings.
+- **2.1.3** (2022-1-20): Updated to Log4J 2.17.1.
+- **2.1.2** (2022-1-12): Fixed a typo in the command line.
+- **2.1.1** (2021-12-23): Updated with the GSEA Desktop 4.2.1 code base. Updated to Log4J 2.17.0. TXT file parser bug fix.
+- **2.1.0** (2021-12-17): Updated with the GSEA Desktop 4.2.0 code base with numerous bug fixes. Adds the Abs_max_of_probes collapse mode. Fixes some issues handling datasets with missing values. Improved warnings and logging. Adds an output file name parameter. Fixed bugs in weighted_p1.5 scoring.
+- **2.0.2** (2021-03-22): Fixed minor typo.
+- **2.0.1** (2021-03-22): Minor doc updates
+- **2.0.0** (2021-01-14): Switched to the GSEA code base. Added new collapse.mode options and omit.features.with.no.symbol.match parameter.
 
 Copyright © 2003-2022 Broad Institute, Inc., Massachusetts Institute of
 Technology, and Regents of the University of California. All rights
 reserved.
-
