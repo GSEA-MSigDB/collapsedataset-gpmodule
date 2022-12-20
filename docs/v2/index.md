@@ -54,7 +54,7 @@ This version of the module is based on the GSEA v4.3.x code base. See the
      measures such as counts or microarray fluorescence.
    - Remap_only: Remap symbols from one namespace to another without collapsing (an error will occur if multiple source genes map to a single destination gene).
 
-  <span style="color:red;">*</span> - *required*
+<span style="color:red;">*</span> = required
 
 ## Advanced Parameters 
 
