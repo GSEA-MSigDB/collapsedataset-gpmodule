@@ -31,8 +31,6 @@ This version of the module is based on the GSEA v4.3.x code base. See the
 
 ## Parameters 
 
-<span style="color:red;">*</span> - *required*
-
 1. *dataset file*<span style="color:red;">*</span>:  This is a file in either 
  [GCT](https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#GCT:_Gene_Cluster_Text_file_format_.28.2A.gct.29")
  or [RES](https://software.broadinstitute.org/cancer/software/gsea/wiki/index.php/Data_formats#RES:_ExpRESsion_.28with_P_and_A_calls.29_file_format_.28.2A.res.29)
@@ -55,6 +53,8 @@ This version of the module is based on the GSEA v4.3.x code base. See the
      In other words, the largest magnitude value is used.  While this method is useful with computational-based input datasets it is generally **not recommended** for use with quantification-based expression 
      measures such as counts or microarray fluorescence.
    - Remap_only: Remap symbols from one namespace to another without collapsing (an error will occur if multiple source genes map to a single destination gene).
+
+<span style="color:red;">*</span> - *required*
 
 ## Advanced Parameters 
 
